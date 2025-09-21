@@ -4,7 +4,7 @@ import heroCoach from "@/assets/hero-coach.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-section-gradient">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-section-gradient pt-16 md:pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
       <div className="absolute top-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-3xl"></div>
