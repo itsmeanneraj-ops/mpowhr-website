@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import mpowhrLogo from "@/assets/mpowhr-logo.svg";
+import mpowhrLogo from "@/assets/mpowhr-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,10 @@ const Navigation = () => {
             >
               Contact
             </a>
-            <Button variant="default" size="lg">
+            <Button
+              size="lg"
+              className="bg-[#93801d] hover:bg-[#7a6b19] text-white"
+            >
               Book Consultation
             </Button>
           </div>
@@ -107,7 +110,7 @@ const Navigation = () => {
                 Contact
               </a>
               <div className="px-3 py-2">
-                <Button variant="default" className="w-full">
+                <Button className="w-full bg-[#93801d] hover:bg-[#7a6b19] text-white">
                   Book Consultation
                 </Button>
               </div>
