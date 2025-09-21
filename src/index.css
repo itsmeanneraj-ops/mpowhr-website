@@ -17,10 +17,10 @@
     --popover-foreground: 25 20% 15%;
 
     /* Primary: Sophisticated Olive Green */
-    --primary: 75 25% 35%;
+    --primary: 75 35% 25%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 75 25% 45%;
-    --primary-dark: 75 25% 25%;
+    --primary-light: 75 35% 35%;
+    --primary-dark: 75 35% 15%;
 
     /* Secondary: Warm Beige */
     --secondary: 45 30% 85%;

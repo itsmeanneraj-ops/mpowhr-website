@@ -48,11 +48,11 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Transform Your <span className="text-gradient">Journey</span>
+            What We <span className="text-gradient">Provide</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Comprehensive coaching and HR solutions designed to unlock your potential 
-            and drive meaningful change in your personal and professional life.
+            Comprehensive life coaching and HR consulting services designed to unlock your potential 
+            and drive sustainable growth in both personal and professional spheres.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ const Services = () => {
 
         {/* Benefits Section */}
         <div className="bg-accent-gradient rounded-3xl p-8 md:p-12">
-          <h3 className="text-3xl font-bold text-center mb-12">Why Choose mpowHR?</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">Why Choose MpowHR?</h3>
           
           <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => {

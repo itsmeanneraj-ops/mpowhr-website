@@ -17,7 +17,7 @@ const Hero = () => {
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full text-sm font-medium text-primary">
               <Star className="w-4 h-4 fill-current" />
-              Certified HR Professional & Life Coach
+              Founded by Anne Anshumathi Raj - Senior HR Manager & Life Coach
             </div>
 
             {/* Main Heading */}

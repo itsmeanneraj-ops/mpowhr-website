@@ -4,12 +4,12 @@ import coachingSession from "@/assets/coaching-session.jpg";
 
 const About = () => {
   const achievements = [
-    "ICF Certified Professional Coach (PCC)",
-    "SHRM-CP Human Resources Certification",
-    "Master's in Organizational Psychology",
-    "8+ Years Corporate HR Leadership",
-    "150+ Successful Coaching Relationships",
-    "Featured Speaker at HR Conferences",
+    "Senior Manager - People at Introlligent",
+    "8+ Years HR Leadership Experience", 
+    "Strategic Business Partner Expertise",
+    "Life Coaching Certification",
+    "Organizational Development Specialist",
+    "Employee Relations Expert",
   ];
 
   return (
@@ -20,12 +20,13 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Meet Your <span className="text-gradient">Guide</span>
+                About <span className="text-gradient">Anne Anshumathi Raj</span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                I'm Sarah Mitchell, a passionate advocate for human potential. With over eight years 
-                in corporate HR and extensive coaching training, I help individuals and organizations 
-                navigate change, build resilience, and achieve their most ambitious goals.
+                With over 8 years of experience in HR as a strategic business partner, Anne has mastered 
+                the art of organizational development and human resources management. As a Senior Manager - People 
+                at Introlligent, she now combines her HR expertise with her passion for life coaching to help 
+                individuals and organizations unlock their full potential.
               </p>
             </div>
 
@@ -33,10 +34,11 @@ const About = () => {
             <div className="glass-card p-6 relative">
               <Quote className="w-8 h-8 text-primary/30 absolute top-4 left-4" />
               <blockquote className="italic text-lg text-foreground/90 pl-8">
-                "Every person has untapped potential waiting to be discovered. My role is to create 
-                a safe space where that potential can flourish and transform into meaningful action."
+                "My journey from HR management to life coaching has shown me that true organizational success 
+                begins with empowered individuals. I believe every person has the potential to create meaningful 
+                change in their life and work."
               </blockquote>
-              <cite className="block text-right mt-4 text-sm text-muted-foreground">- Sarah Mitchell, Founder</cite>
+              <cite className="block text-right mt-4 text-sm text-muted-foreground">- Anne Anshumathi Raj, Founder</cite>
             </div>
 
             {/* Achievements */}
