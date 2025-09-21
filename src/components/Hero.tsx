@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute top-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
 
-      <div className="container-width relative z-10">
+      <div className="container-width relative z-10 px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Column - Content */}
           <div className="text-center lg:text-left space-y-8 fade-in-up">
