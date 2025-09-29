@@ -43,19 +43,19 @@ const Approach = () => {
     <section id="approach" className="section-padding bg-section-gradient">
       <div className="container-width">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             My <span className="text-gradient">Approach</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             A structured yet flexible methodology designed to create lasting transformation 
             through personalized coaching and strategic support.
           </p>
         </div>
 
         {/* Process Steps */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12">The Transformation Journey</h3>
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-center mb-8">The Transformation Journey</h3>
           
           <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
             {steps.map((step, index) => {
@@ -67,13 +67,13 @@ const Approach = () => {
                     <div className="hidden xl:block absolute top-8 left-full w-8 h-0.5 bg-gradient-to-r from-primary to-accent z-0"></div>
                   )}
                   
-                  <div className="glass-card p-6 hover-lift relative z-10">
+                  <div className="glass-card p-4 hover-lift relative z-10">
                     <div className="text-center mb-4">
                       <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                         <Icon className="w-8 h-8 text-primary" />
                       </div>
                       <div className="text-sm font-medium text-primary mb-2">STEP {index + 1}</div>
-                      <h4 className="text-xl font-bold">{step.title}</h4>
+                      <h4 className="text-lg font-bold">{step.title}</h4>
                     </div>
                     
                     <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{step.description}</p>

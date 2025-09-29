@@ -46,25 +46,25 @@ const Services = () => {
     <section id="services" className="section-padding bg-background">
       <div className="container-width">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             What We <span className="text-gradient">Provide</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             Comprehensive life coaching and HR consulting services designed to unlock your potential 
             and drive sustainable growth in both personal and professional spheres.
           </p>
         </div>
 
         {/* Main Services - Horizontal List */}
-        <div className="mb-20">
+        <div className="mb-12">
           <div className="flex flex-col lg:flex-row gap-6 justify-center items-stretch lg:overflow-x-auto lg:pb-4 pt-6">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
                 <div
                   key={index}
-                  className={`relative glass-card p-6 hover-lift flex-shrink-0 w-full lg:w-80 lg:min-w-80 ${
+                  className={`relative glass-card p-4 hover-lift flex-shrink-0 w-full lg:w-72 lg:min-w-72 ${
                     service.popular ? "ring-2 ring-primary/20" : ""
                   }`}
                 >
@@ -79,7 +79,7 @@ const Services = () => {
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                    <h3 className="text-lg font-bold mb-2">{service.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
                   </div>
                 </div>
@@ -103,10 +103,10 @@ const Services = () => {
         </div>
 
         {/* Benefits Section */}
-        <div className="bg-accent-gradient p-8 md:p-12">
-          <h3 className="text-3xl font-bold text-center mb-12">Why Choose MpowHR?</h3>
+        <div className="bg-accent-gradient p-6 md:p-8">
+          <h3 className="text-2xl font-bold text-center mb-8">Why Choose MpowHR?</h3>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
@@ -114,7 +114,7 @@ const Services = () => {
                   <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-soft">
                     <Icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h4 className="text-xl font-semibold mb-3">{benefit.title}</h4>
+                  <h4 className="text-lg font-semibold mb-3">{benefit.title}</h4>
                   <p className="text-foreground/80 leading-relaxed">{benefit.description}</p>
                 </div>
               );

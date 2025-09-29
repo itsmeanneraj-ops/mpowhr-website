@@ -9,27 +9,27 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-background">
       <div className="container-width">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Ready to Begin Your <span className="text-gradient">Transformation?</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed">
             Take the first step towards unlocking your potential. Book a complimentary 
             discovery call to explore how we can work together.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Schedule Your Discovery Call</h3>
-              <p className="text-muted-foreground mb-8">
+              <h3 className="text-xl font-bold mb-3">Schedule Your Discovery Call</h3>
+              <p className="text-muted-foreground mb-6">
                 Let's discuss your goals and explore how coaching can accelerate your journey.
               </p>
             </div>
 
-            <Card className="p-8 shadow-soft">
+            <Card className="p-6 shadow-soft">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>

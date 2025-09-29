@@ -15,14 +15,14 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-section-gradient">
       <div className="container-width">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 About <span className="text-gradient">Anne Anshumathi Raj</span>
               </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 With over 8 years of experience in HR as a strategic business
                 partner, Anne has mastered the art of organizational development
                 and human resources management. As a Senior Manager - People at
@@ -35,7 +35,7 @@ const About = () => {
             {/* Quote */}
             <div className="glass-card p-6 relative">
               <Quote className="w-8 h-8 text-primary/30 absolute top-4 left-4" />
-              <blockquote className="italic text-lg text-foreground/90 pl-8">
+              <blockquote className="italic text-base text-foreground/90 pl-8">
                 "My journey from HR management to life coaching has shown me
                 that true organizational success begins with empowered
                 individuals. I believe every person has the potential to create
