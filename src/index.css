@@ -8,7 +8,7 @@
   :root {
     /* Core Colors - Pale Olive & Beige Palette */
     --background: 40 25% 96%;
-    --foreground: 25 20% 15%;
+    --foreground: 151 80% 12%;
 
     --card: 40 25% 96%;
     --card-foreground: 25 20% 15%;
@@ -17,10 +17,10 @@
     --popover-foreground: 25 20% 15%;
 
     /* Primary: Darker Olive Green */
-    --primary: 75 35% 35%;
+    --primary: 151 80% 12%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 75 35% 45%;
-    --primary-dark: 75 35% 25%;
+    --primary-light: 151 80% 12%;
+    --primary-dark: 151 80% 12%;
 
     /* Secondary: Warm Beige */
     --secondary: 45 35% 88%;
@@ -28,8 +28,8 @@
     --secondary-dark: 45 30% 80%;
 
     /* Accent: Light Sage */
-    --accent: 75 20% 70%;
-    --accent-foreground: 25 20% 15%;
+    --accent: 151 80% 12%;
+    --accent-foreground: 151 80% 12%;
 
     --muted: 45 30% 96%;
     --muted-foreground: 25 15% 50%;
@@ -46,6 +46,14 @@
     /* Design System Extensions */
     --glass-bg: 0 0% 100% / 0.85;
     --glass-border: 45 20% 90% / 0.3;
+
+    /* Navigation Colors */
+    --nav-hover: 45 80% 60%;
+    --nav-mobile-bg: 75 35% 10%;
+
+    /* Button Variants */
+    --button-navbar: 45 30% 75%;
+    --button-navbar-hover: 45 25% 65%;
     --hero-gradient: linear-gradient(
       135deg,
       hsl(75 35% 35%) 0%,
@@ -79,7 +87,7 @@
 
   .dark {
     --background: 25 20% 8%;
-    --foreground: 45 30% 95%;
+    --foreground: 151 80% 12%;
 
     --card: 25 20% 10%;
     --card-foreground: 45 30% 95%;

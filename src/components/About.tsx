@@ -1,16 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Quote, CheckCircle, Calendar } from "lucide-react";
+import { Quote, Calendar } from "lucide-react";
 import coachingSession from "@/assets/coaching-session.jpg";
 
 const About = () => {
-  const achievements = [
-    "Senior Manager - People at Introlligent",
-    "8+ Years HR Leadership Experience",
-    "Strategic Business Partner Expertise",
-    "Life Coaching Certification",
-    "Organizational Development Specialist",
-    "Employee Relations Expert",
-  ];
 
   return (
     <section id="about" className="section-padding bg-section-gradient">
@@ -44,23 +36,6 @@ const About = () => {
               <cite className="block text-right mt-4 text-sm text-muted-foreground">
                 - Anne Anshumathi Raj, Founder
               </cite>
-            </div>
-
-            {/* Achievements */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">
-                Credentials & Experience
-              </h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                {achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm leading-relaxed">
-                      {achievement}
-                    </span>
-                  </div>
-                ))}
-              </div>
             </div>
 
             {/* CTA */}
