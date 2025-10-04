@@ -11,20 +11,20 @@ import heroCoach from "@/assets/hero-coach-bgremove.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-section-gradient pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[hsl(40_25%_96%)] to-[hsl(45_35%_88%)] pt-2 pb-6 md:pt-4 md:pb-10 lg:pt-6 lg:pb-12 px-6 md:px-8 lg:px-12">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
       <div className="absolute top-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
 
       <div className="container-width relative z-10 px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 grid-spacing items-center">
           {/* Left Column - Image */}
-          <div className="relative slide-in-right order-2 lg:order-1">
+          <div className="relative animate-[slideInRight_0.8s_ease-out_forwards] order-2 lg:order-1">
             <div className="relative">
               {/* Main Image with Arch Top Border */}
               <div
-                className="relative z-10 overflow-hidden hover:shadow-glass hover-lift"
+                className="relative z-10 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)]"
                 style={{
                   borderTopLeftRadius: "0.5rem",
                   borderTopRightRadius: "0.5rem",
@@ -63,33 +63,33 @@ const Hero = () => {
               </div>
 
               {/* Overlaying Icons - positioned relative to the image container */}
-              <div className="absolute top-2 -right-1 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-glass float-animation z-20">
+              <div className="absolute top-2 -right-1 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] animate-[float_6s_ease-in-out_infinite] z-20">
                 <Star className="w-8 h-8 text-primary fill-current" />
               </div>
 
               <div
-                className="absolute top-20 -left-4 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-soft float-animation z-20"
+                className="absolute top-20 -left-4 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-[0_4px_20px_hsl(75_35%_25%/_0.08)] animate-[float_6s_ease-in-out_infinite] z-20"
                 style={{ animationDelay: "2s" }}
               >
                 <Award className="w-6 h-6 text-primary" />
               </div>
 
               <div
-                className="absolute top-40 -right-6 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-soft float-animation z-20"
+                className="absolute top-40 -right-6 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-[0_4px_20px_hsl(75_35%_25%/_0.08)] animate-[float_6s_ease-in-out_infinite] z-20"
                 style={{ animationDelay: "4s" }}
               >
                 <Users className="w-5 h-5 text-primary" />
               </div>
 
               <div
-                className="absolute bottom-32 -left-4 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-soft float-animation z-20"
+                className="absolute bottom-32 -left-4 w-14 h-14 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-[0_4px_20px_hsl(75_35%_25%/_0.08)] animate-[float_6s_ease-in-out_infinite] z-20"
                 style={{ animationDelay: "1s" }}
               >
                 <Target className="w-6 h-6 text-primary" />
               </div>
 
               <div
-                className="absolute bottom-16 -right-4 w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-soft float-animation z-20"
+                className="absolute bottom-16 -right-4 w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-[0_4px_20px_hsl(75_35%_25%/_0.08)] animate-[float_6s_ease-in-out_infinite] z-20"
                 style={{ animationDelay: "3s" }}
               >
                 <TrendingUp className="w-7 h-7 text-primary" />
@@ -100,7 +100,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Content */}
-          <div className="text-center lg:text-left space-y-6 fade-in-up order-1 lg:order-2">
+          <div className="text-center lg:text-left space-y-6 animate-[fadeInUp_0.6s_ease-out_forwards] order-1 lg:order-2">
             {/* Trust Badge */}
             {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 text-sm font-medium text-primary"> */}
             {/*   <Star className="w-4 h-4 fill-current" /> */}

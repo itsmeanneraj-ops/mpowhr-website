@@ -66,8 +66,8 @@ const Services = () => {
     <section id="services" className="section-padding bg-background">
       <div className="container-width">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+        <div className="text-center max-w-3xl mx-auto section-header-spacing">
+          <h2 className="text-2xl md:text-3xl font-bold section-title-spacing">
             What We <span className="text-gradient">Provide</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -78,15 +78,16 @@ const Services = () => {
         </div>
 
         {/* Main Services - Horizontal List */}
-        <div className="mb-12">
+        <div className="section-subtitle-spacing">
           <div className="flex flex-col lg:flex-row gap-6 justify-center items-stretch lg:overflow-x-auto lg:pb-4 pt-6">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
                 <div
                   key={index}
-                  className={`relative glass-card p-4 hover-lift flex-shrink-0 w-full lg:w-72 lg:min-w-72 ${service.popular ? "ring-2 ring-primary/20" : ""
-                    }`}
+                  className={`relative bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)] flex-shrink-0 w-full lg:w-80 lg:min-w-80 flex flex-col ${
+                    service.popular ? "ring-2 ring-primary/20" : ""
+                  }`}
                 >
                   {service.popular && (
                     <div className="absolute -top-3 left-6 bg-primary text-primary-foreground px-4 py-1 text-sm font-medium rounded-full">
@@ -108,7 +109,7 @@ const Services = () => {
                     </div>
                   </div>
 
-                  <ul className="space-y-2 mb-6 ml-16">
+                  <ul className="space-y-2 mb-6 ml-16 flex-grow">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2">
                         <div className="w-1 h-1 bg-primary rounded-full"></div>
@@ -120,7 +121,7 @@ const Services = () => {
                   <Button
                     variant={service.popular ? "default" : "outline"}
                     size="sm"
-                    className="w-full"
+                    className="w-full mt-auto"
                   >
                     Learn More
                   </Button>

@@ -3,10 +3,13 @@ import { Users, Clock, Heart, Star } from "lucide-react";
 
 const Community = () => {
   return (
-    <section id="community" className="section-padding bg-accent-gradient">
+    <section
+      id="community"
+      className="section-padding bg-gradient-to-br from-[hsl(75_20%_85%)] to-[hsl(45_35%_90%)]"
+    >
       <div className="container-width">
-        <div className="text-center mb-16 fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="text-center section-header-spacing animate-[fadeInUp_0.6s_ease-out_forwards]">
+          <h2 className="text-2xl md:text-3xl font-bold section-title-spacing">
             Join Our <span className="text-gradient">Community</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -15,9 +18,9 @@ const Community = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 grid-spacing items-center">
           {/* Left Column - Features */}
-          <div className="space-y-8 fade-in-up">
+          <div className="content-spacing animate-[fadeInUp_0.6s_ease-out_forwards]">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
@@ -75,8 +78,8 @@ const Community = () => {
           </div>
 
           {/* Right Column - Visual */}
-          <div className="relative slide-in-right">
-            <div className="glass-card p-8 md:p-12 text-center">
+          <div className="relative animate-[slideInRight_0.8s_ease-out_forwards]">
+            <div className="bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] p-8 md:p-12 text-center">
               <div className="space-y-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-pink-100 rounded-full flex items-center justify-center mx-auto">
                   <Users className="w-10 h-10 text-orange-600" />

@@ -7,8 +7,8 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass-nav bg-primary">
-      <div className="container-width px-4 md:px-6">
+    <nav className="top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-white/20 sticky">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-14 md:h-16">
           {/* Logo */}
           <div className="flex items-center overflow-hidden h-12 m:h-16 w-40">
@@ -71,7 +71,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden border-t border-white/10 bg-nav-mobile-bg">
+          <div className="md:hidden border-t border-white/10 bg-primary/90">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
                 href="#services"

@@ -9,59 +9,75 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-background">
       <div className="container-width">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Ready to Begin Your <span className="text-gradient">Transformation?</span>
+        <div className="text-center max-w-3xl mx-auto section-header-spacing">
+          <h2 className="text-2xl md:text-3xl font-bold section-title-spacing">
+            Ready to Begin Your{" "}
+            <span className="text-gradient">Transformation?</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Take the first step towards unlocking your potential. Book a complimentary 
-            discovery call to explore how we can work together.
+            Take the first step towards unlocking your potential. Book a
+            complimentary discovery call to explore how we can work together.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid lg:grid-cols-2 grid-spacing">
           {/* Contact Form */}
-          <div className="space-y-6">
+          <div className="content-spacing">
             <div>
-              <h3 className="text-xl font-bold mb-3">Schedule Your Discovery Call</h3>
+              <h3 className="text-xl font-bold mb-3">
+                Schedule Your Discovery Call
+              </h3>
               <p className="text-muted-foreground mb-6">
-                Let's discuss your goals and explore how coaching can accelerate your journey.
+                Let's discuss your goals and explore how coaching can accelerate
+                your journey.
               </p>
             </div>
 
-            <Card className="p-6 shadow-soft">
+            <Card className="card-spacing shadow-[0_4px_20px_hsl(75_35%_25%/_0.08)]">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium mb-2">First Name</label>
+                    <label className="block text-sm font-medium mb-2">
+                      First Name
+                    </label>
                     <Input placeholder="Your first name" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">Last Name</label>
+                    <label className="block text-sm font-medium mb-2">
+                      Last Name
+                    </label>
                     <Input placeholder="Your last name" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Email Address</label>
+                  <label className="block text-sm font-medium mb-2">
+                    Email Address
+                  </label>
                   <Input type="email" placeholder="your.email@example.com" />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Phone Number</label>
+                  <label className="block text-sm font-medium mb-2">
+                    Phone Number
+                  </label>
                   <Input type="tel" placeholder="+1 (555) 123-4567" />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">What brings you here?</label>
-                  <Textarea 
-                    placeholder="Tell me about your current challenges or goals..." 
+                  <label className="block text-sm font-medium mb-2">
+                    What brings you here?
+                  </label>
+                  <Textarea
+                    placeholder="Tell me about your current challenges or goals..."
                     rows={5}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Preferred Session Type</label>
+                  <label className="block text-sm font-medium mb-2">
+                    Preferred Session Type
+                  </label>
                   <select className="w-full px-3 py-2 bg-background border border-input focus:outline-none focus:ring-2 focus:ring-ring">
                     <option>In-Person Coaching</option>
                     <option>Virtual Coaching</option>
@@ -80,17 +96,18 @@ const Contact = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="content-spacing">
             <div>
               <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
               <p className="text-muted-foreground mb-8">
-                I'm here to support your journey. Reach out through any of these channels.
+                I'm here to support your journey. Reach out through any of these
+                channels.
               </p>
             </div>
 
             {/* Contact Cards */}
             <div className="space-y-4">
-              <Card className="p-6 hover-lift glass-card">
+              <Card className="card-spacing transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)] bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)]">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                     <Mail className="w-6 h-6 text-primary" />
@@ -102,7 +119,7 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 hover-lift glass-card">
+              <Card className="card-spacing transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)] bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)]">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center">
                     <Phone className="w-6 h-6 text-primary" />
@@ -114,36 +131,45 @@ const Contact = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 hover-lift glass-card">
+              <Card className="card-spacing transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)] bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)]">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-semibold">Location</h4>
-                    <p className="text-muted-foreground">San Francisco Bay Area<br />Virtual sessions worldwide</p>
+                    <p className="text-muted-foreground">
+                      San Francisco Bay Area
+                      <br />
+                      Virtual sessions worldwide
+                    </p>
                   </div>
                 </div>
               </Card>
 
-              <Card className="p-6 hover-lift glass-card">
+              <Card className="card-spacing transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)] bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)]">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center">
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-semibold">Availability</h4>
-                    <p className="text-muted-foreground">Mon-Fri: 9AM-7PM PST<br />Weekends by appointment</p>
+                    <p className="text-muted-foreground">
+                      Mon-Fri: 9AM-7PM PST
+                      <br />
+                      Weekends by appointment
+                    </p>
                   </div>
                 </div>
               </Card>
             </div>
 
             {/* Quick Actions */}
-            <div className="bg-accent-gradient p-8 text-center">
+            <div className="bg-gradient-to-br from-[hsl(75_20%_85%)] to-[hsl(45_35%_90%)] p-8 text-center">
               <h4 className="text-xl font-bold mb-4">Ready to Start Today?</h4>
               <p className="text-foreground/80 mb-6 text-sm">
-                Join our community newsletter for weekly insights and exclusive resources.
+                Join our community newsletter for weekly insights and exclusive
+                resources.
               </p>
               <div className="flex gap-2">
                 <Input placeholder="Enter your email" className="flex-1" />

@@ -4,16 +4,19 @@ import coachingSession from "@/assets/coaching-session.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-section-gradient">
+    <section
+      id="about"
+      className="section-padding bg-gradient-to-b from-[hsl(40_25%_96%)] to-[hsl(45_35%_88%)]"
+    >
       <div className="container-width">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 grid-spacing items-center">
           {/* Left Column - Content */}
-          <div className="space-y-6">
+          <div className="content-spacing">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold section-title-spacing">
                 About <span className="text-gradient">Anne Anshumathi Raj</span>
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed section-title-spacing">
                 Let's be real: life doesn't come with a roadmap, and sometimes
                 you just need a safe space to hit the pause button. That's
                 exactly what MpowHR is. It’s the place you come to when you need
@@ -68,7 +71,7 @@ const About = () => {
           <div className="relative">
             <div className="relative">
               {/* Main Image */}
-              <div className="overflow-hidden shadow-glass hover-lift">
+              <div className="overflow-hidden shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)]">
                 <img
                   src={coachingSession}
                   alt="Life coaching session in progress"
@@ -76,7 +79,7 @@ const About = () => {
                 />
 
                 {/* Overlay Cards */}
-                <div className="absolute top-6 right-6 glass-card p-4">
+                <div className="absolute top-6 right-6 bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] p-4">
                   <div className="text-sm font-medium text-primary">
                     Currently Accepting
                   </div>
