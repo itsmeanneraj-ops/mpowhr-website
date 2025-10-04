@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import mpowhrLogo from "@/assets/mpowhr-logo.png";
+import mpowhrLogo from "@/assets/mpowhr-logo-noBG.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +11,11 @@ const Navigation = () => {
       <div className="container-width px-4 md:px-6">
         <div className="flex items-center justify-between h-14 md:h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center overflow-hidden h-12 m:h-16 w-40">
             <img
               src={mpowhrLogo}
               alt="MpowHR - People Brilliance"
-              className="h-10 md:h-12 w-auto"
+              className="h-28 m:h-36 object-fit w-full"
             />
           </div>
 

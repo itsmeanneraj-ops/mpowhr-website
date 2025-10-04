@@ -102,61 +102,64 @@ const Hero = () => {
           {/* Right Column - Content */}
           <div className="text-center lg:text-left space-y-6 fade-in-up order-1 lg:order-2">
             {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 text-sm font-medium text-primary">
-              <Star className="w-4 h-4 fill-current" />
-              Founded by Anne Anshumathi Raj - Senior HR Manager & Life Coach
-            </div>
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 text-sm font-medium text-primary"> */}
+            {/*   <Star className="w-4 h-4 fill-current" /> */}
+            {/*   Founded by Anne Anshumathi Raj - Senior HR Manager & Life Coach */}
+            {/* </div> */}
 
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                Empower Your
-                <span className="text-gradient block">Potential</span>
+                Time to Restart.
+                <span className="text-gradient block">
+                  With Clarity & Courage.
+                </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Transform your career and organization with expert life coaching
-                and strategic HR management. Unlock growth, build resilience,
-                and achieve lasting success.
+                From leadership pivots to personal breakthroughs, unlock your
+                potential.
+                <br />
+                Get 10+ years of expert coaching and strategic insights to build
+                resilience and lasting success.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
-                variant="hero"
+                variant="outline"
                 size="lg"
                 className="text-base px-6 py-3 h-auto"
               >
                 Start Your Journey
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-base px-6 py-3 h-auto"
-              >
-                Explore Services
-              </Button>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 border-t border-border/50">
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-primary">150+</div>
+                <div className="text-2xl font-bold text-primary">10+</div>
                 <div className="text-sm text-muted-foreground">
-                  Clients Transformed
+                  Years crafting clarity
                 </div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-primary">8+</div>
+                <div className="text-2xl font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">
-                  Years Experience
+                  Certifications
                 </div>
               </div>
               <div className="text-center lg:text-left col-span-2 md:col-span-1">
-                <div className="text-2xl font-bold text-primary">95%</div>
+                <div className="text-2xl font-bold text-primary">100+</div>
                 <div className="text-sm text-muted-foreground">
-                  Success Rate
+                  Journeys Restarted
+                </div>
+              </div>
+              <div className="text-center lg:text-left col-span-2 md:col-span-1">
+                <div className="text-2xl font-bold text-primary">100%</div>
+                <div className="text-sm text-muted-foreground">
+                  Owned on your terms
                 </div>
               </div>
             </div>
