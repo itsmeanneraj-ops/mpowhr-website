@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Linkedin, Instagram, Twitter } from "lucide-react";
 import mpowhrLogo from "@/assets/mpowhr-logo-noBG.png";
 
 const Navigation = () => {
@@ -19,36 +19,61 @@ const Navigation = () => {
             />
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              <a
+                href="#about"
+                className="text-white hover:text-nav-hover transition-colors font-medium"
+              >
+                About
+              </a>
+              <a
+                href="#services"
+                className="text-white hover:text-nav-hover transition-colors font-medium"
+              >
+                Services
+              </a>
+              <a
+                href="#approach"
+                className="text-white hover:text-nav-hover transition-colors font-medium"
+              >
+                Approach
+              </a>
+              <a
+                href="#community"
+                className="text-white hover:text-nav-hover transition-colors font-medium"
+              >
+                Community
+              </a>
+            </div>
+          </div>
+
+          {/* Desktop Social Icons */}
+          <div className="hidden md:flex items-center space-x-4">
             <a
-              href="#about"
-              className="text-white hover:text-nav-hover transition-colors font-medium"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
             >
-              About
+              <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="#services"
-              className="text-white hover:text-nav-hover transition-colors font-medium"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
             >
-              Services
+              <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="#approach"
-              className="text-white hover:text-nav-hover transition-colors font-medium"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
             >
-              Approach
-            </a>
-            <a
-              href="#community"
-              className="text-white hover:text-nav-hover transition-colors font-medium"
-            >
-              Community
-            </a>
-            <a href="#contact">
-              <Button variant="navbar" size="lg" className="rounded-xl">
-                Book Consultation
-              </Button>
+              <Twitter className="w-5 h-5" />
             </a>
           </div>
 
@@ -99,10 +124,32 @@ const Navigation = () => {
               >
                 Contact
               </a>
-              <div className="px-3 py-2 rounded-xl">
-                <Button variant="navbar" className="w-full rounded-xl">
-                  Book Consultation
-                </Button>
+              {/* Mobile Social Icons */}
+              <div className="flex items-center justify-center space-x-6 pt-4 pb-2">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
+                >
+                  <Twitter className="w-5 h-5" />
+                </a>
               </div>
             </div>
           </div>
