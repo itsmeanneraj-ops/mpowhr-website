@@ -166,66 +166,6 @@ const Approach = () => {
             })}
           </div>
         </div>
-
-        {/* Principles & Image Section */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mt-20 lg:mt-24">
-          {/* Left Column - Image */}
-          <div className="relative order-2 lg:order-1">
-            <div className="relative">
-              <div className="overflow-hidden shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)] rounded-2xl">
-                <img
-                  src={hrMeeting}
-                  alt="Professional team meeting and collaboration"
-                  className="w-full h-[500px] object-cover rounded-2xl"
-                />
-              </div>
-
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -left-4 w-20 h-20 bg-accent/30 rounded-full blur-2xl"></div>
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
-            </div>
-          </div>
-
-          {/* Right Column - Principles */}
-          <div className="space-y-8 order-1 lg:order-2">
-            <div>
-              <h3
-                className="text-3xl font-bold mb-6"
-                style={{ fontFamily: "Vinila, Inter, sans-serif" }}
-              >
-                Imagine if you could
-              </h3>
-              <p
-                className="text-gray-600 leading-relaxed mb-8"
-                style={{ fontFamily: "Poppins, sans-serif" }}
-              >
-                Picture yourself achieving these meaningful transformations that
-                create lasting change in your daily life and overall well-being.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              {principles.map((principle, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <Sparkles className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span
-                    className="leading-relaxed text-gray-600"
-                    style={{ fontFamily: "Poppins, sans-serif" }}
-                  >
-                    {principle}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="default" size="lg">
-                Start Your Journey
-                <ArrowRight className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

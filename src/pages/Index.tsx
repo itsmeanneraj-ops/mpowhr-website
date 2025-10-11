@@ -6,6 +6,7 @@ import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 import Impact from "@/components/our-impact";
 import Tagline from "@/components/tagline";
+import Imagine from "@/components/imagine";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <About />
       <Tagline />
       <Services />
+      <Imagine />
       <Approach />
       <Footer />
     </div>

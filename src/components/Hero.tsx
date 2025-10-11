@@ -10,8 +10,8 @@ const Hero = () => {
         backgroundImage: `url(${mpowhrBanner})`,
       }}
     >
-      {/* Dark Overlay for Better Text Readability */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* Dark Overlay with Subtle Green Tint for Better Text Readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-green-900/20 via-black/40 to-black/50" />
 
       {/* Content Overlay */}
       <div className="relative z-10 min-h-screen flex items-center px-6 md:px-8 lg:px-12">

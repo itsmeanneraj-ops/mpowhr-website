@@ -1,64 +1,50 @@
 import { Button } from "@/components/ui/button";
-import { Users, Target, Heart, TrendingUp, Clock, Award } from "lucide-react";
+import { Users, Target, Heart } from "lucide-react";
+import coachingSessionImg from "@/assets/coaching-session.jpg";
+import hrMeetingImg from "@/assets/hr-meeting.jpg";
+import heroCoachImg from "@/assets/hero-coach.jpg";
 
 const Services = () => {
   const services = [
     {
       icon: Heart,
-      title: "Life Coaching- Empowered Life Coaching",
+      title: "Empowered Life Coaching",
       description:
         "Individual, one-on-one sessions focused on navigating life's most meaningful and often stressful transitions. This is your safe space to Pause, Realign, and Rise, empowering you with courage and clear personal choice.",
-      features: [
+      highlights: [
         "Relationship Reimagined",
         "Burnout & Stress Recovery",
         "Decisive Confidence",
         "Purpose & Fulfillment Mapping",
       ],
+      image: coachingSessionImg,
       popular: true,
     },
     {
-      icon: Users,
+      icon: Target,
       title: "Corporate Training Strategy",
       description:
-        "Customized programs that develop essential leadership skills and build high-impact teams. We focus on transforming organizational challenges into collective focus and sustained performance",
-      features: [
+        "Customized programs that develop essential leadership skills and build high-impact teams. We focus on transforming organizational challenges into collective focus and sustained performance.",
+      highlights: [
         "Executive & Leadership Coaching",
         "Team Resilience Workshops",
         "Organizational Strategy Alignment",
         "High-Impact Communication",
       ],
+      image: hrMeetingImg,
     },
     {
-      icon: Target,
+      icon: Users,
       title: "Dedicated Growth Programes",
       description:
         "Short-term, high-intensity formats designed to deliver rapid progress and immediate, actionable takeaways for specific individual or group goals.",
-      features: [
+      highlights: [
         "The Pause. Realign. Rise. Intensive",
         "Workshops for Team Alignment",
         "Personal Branding for Leaders",
         "Group Coaching for Professionals",
       ],
-    },
-  ];
-
-  const benefits = [
-    {
-      icon: TrendingUp,
-      title: "Proven Results",
-      description:
-        "95% of clients report significant improvement within 3 months",
-    },
-    {
-      icon: Clock,
-      title: "Flexible Scheduling",
-      description:
-        "Evening and weekend sessions available to fit your lifestyle",
-    },
-    {
-      icon: Award,
-      title: "Certified Excellence",
-      description: "ICF certified coach with advanced HR credentials",
+      image: heroCoachImg,
     },
   ];
 
@@ -97,64 +83,75 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Main Services - Horizontal List */}
-        <div className="section-subtitle-spacing">
-          <div className="flex flex-col lg:flex-row gap-6 justify-center items-stretch lg:overflow-x-auto lg:pb-4 pt-6">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <div
-                  key={index}
-                  className={`relative bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)] flex-shrink-0 w-full lg:w-80 lg:min-w-80 flex flex-col ${
-                    service.popular ? "ring-2 ring-primary/20" : ""
-                  }`}
-                >
+        {/* Services with Alternating Layout */}
+        <div className="space-y-16 lg:space-y-24 max-w-5xl mx-auto px-4 lg:px-8">
+          {services.map((service, index) => {
+            const isEven = index % 2 === 0;
+
+            return (
+              <div
+                key={index}
+                className={`flex flex-col lg:flex-row items-center gap-8 lg:gap-12 ${
+                  isEven ? "" : "lg:flex-row-reverse"
+                }`}
+              >
+                {/* Content Side */}
+                <div className="flex-1 max-w-lg">
                   {service.popular && (
-                    <div className="absolute -top-3 left-6 bg-primary text-primary-foreground px-4 py-1 text-sm font-medium rounded-full">
+                    <div className="inline-block bg-secondary text-secondary-foreground px-4 py-1 text-sm font-medium rounded-full mb-4">
                       Most Popular
                     </div>
                   )}
 
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3
-                        className="text-lg font-bold mb-2"
-                        style={{ fontFamily: "Vinila, Inter, sans-serif" }}
-                      >
-                        {service.title}
-                      </h3>
+                  <h3
+                    className="text-3xl lg:text-4xl font-bold mb-4 text-primary"
+                    style={{
+                      fontFamily: "Vinila, Inter, sans-serif",
+                    }}
+                  >
+                    {service.title}
+                  </h3>
+
+                  <p
+                    className="text-gray-600 text-lg leading-relaxed mb-8"
+                    style={{ fontFamily: "Poppins, sans-serif" }}
+                  >
+                    {service.description}
+                  </p>
+
+                  <div className="space-y-4">
+                    {service.highlights.map((highlight, idx) => (
                       <p
-                        className="text-gray-600 text-sm leading-relaxed"
+                        key={idx}
+                        className="text-gray-700 leading-relaxed"
                         style={{ fontFamily: "Poppins, sans-serif" }}
                       >
-                        {service.description}
+                        {highlight}
                       </p>
-                    </div>
-                  </div>
-
-                  <ul className="space-y-2 mb-6 ml-16 flex-grow">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-2">
-                        <div className="w-1 h-1 bg-primary rounded-full"></div>
-                        <span className="text-xs">{feature}</span>
-                      </li>
                     ))}
-                  </ul>
-
-                  <Button
-                    variant={service.popular ? "default" : "outline"}
-                    size="sm"
-                    className="w-full mt-auto"
-                  >
-                    Learn More
-                  </Button>
+                  </div>
                 </div>
-              );
-            })}
-          </div>
+
+                {/* Image Side */}
+                <div className="flex-1 flex justify-center lg:justify-center max-w-sm">
+                  <div className="relative">
+                    {/* Circular Image Container */}
+                    <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-gray-100 border-4 border-white shadow-2xl">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    {/* Decorative elements */}
+                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full animate-pulse"></div>
+                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-accent/30 rounded-full animate-pulse delay-300"></div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

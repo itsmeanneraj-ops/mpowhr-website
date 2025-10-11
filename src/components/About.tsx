@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Quote, Calendar } from "lucide-react";
-import coachingSession from "@/assets/coaching-session.jpg";
+import anne1 from "@/assets/anne1.jpg";
 
 const About = () => {
   return (
@@ -94,23 +94,10 @@ const About = () => {
               {/* Main Image */}
               <div className="overflow-hidden shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)]">
                 <img
-                  src={coachingSession}
+                  src={anne1}
                   alt="Life coaching session in progress"
-                  className="w-full h-[600px] object-cover"
+                  className="w-full h-[600px] object-cover object-top"
                 />
-
-                {/* Overlay Cards */}
-                <div className="absolute top-6 right-6 bg-[hsl(40_25%_96%/0.9)] backdrop-blur-lg border border-white/30 shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] p-4">
-                  <div className="text-sm font-medium text-primary">
-                    Currently Accepting
-                  </div>
-                  <div
-                    className="text-xs text-gray-600"
-                    style={{ fontFamily: "Poppins, sans-serif" }}
-                  >
-                    Senior Manager - People at Introlligent
-                  </div>
-                </div>
               </div>
             </div>
 

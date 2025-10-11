@@ -41,10 +41,10 @@ const Navigation = () => {
                 Approach
               </a>
               <a
-                href="#community"
+                href="#contact"
                 className="text-white hover:text-nav-hover transition-colors font-medium"
               >
-                Community
+                Contact
               </a>
             </div>
           </div>
@@ -111,12 +111,6 @@ const Navigation = () => {
                 className="block px-3 py-2 text-white hover:text-nav-hover font-medium"
               >
                 Approach
-              </a>
-              <a
-                href="#community"
-                className="block px-3 py-2 text-white hover:text-nav-hover font-medium"
-              >
-                Community
               </a>
               <a
                 href="#contact"
