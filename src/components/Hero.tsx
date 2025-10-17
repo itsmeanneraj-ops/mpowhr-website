@@ -25,16 +25,16 @@ const Hero = () => {
           {/* Main Heading */}
           <div className="space-y-6">
             <motion.h1
-              className="text-4xl md:text-5xl font-bold leading-tight text-nav-hover"
-              style={{ fontFamily: "Vinila, Inter, sans-serif" }}
+              className="text-4xl md:text-5xl leading-tight bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent"
+              style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800 }}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
               Time to Restart.
               <motion.span
-                className="block text-nav-hover"
-                style={{ fontFamily: "Vinila, Inter, sans-serif" }}
+                className="block bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent"
+                style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800 }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={
                   isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
