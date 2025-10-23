@@ -24,28 +24,42 @@ const Hero = () => {
         <div className="text-left max-w-4xl">
           {/* Main Heading */}
           <div className="space-y-6">
-            <motion.h1
-              className="text-4xl md:text-5xl leading-tight bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent"
-              style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800 }}
-              initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-              transition={{ duration: 1, delay: 0.2 }}
-            >
-              Time to Restart.
-              <motion.span
-                className="block bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent"
-                style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800 }}
-                initial={{ opacity: 0, y: 30 }}
+            <div className="drop-shadow-5xl">
+              <motion.h1
+                className="text-3xl md:text-4xl leading-tight bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent pb-2"
+                style={{
+                  fontFamily: "'Playfair Display', serif",
+                  fontWeight: 800,
+                  lineHeight: "1.25",
+                  paddingBottom: "8px",
+                }}
+                initial={{ opacity: 0, y: 50 }}
                 animate={
-                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
                 }
-                transition={{ duration: 1, delay: 0.5 }}
+                transition={{ duration: 1, delay: 0.2 }}
               >
-                with Clarity & Courage.
-              </motion.span>
-            </motion.h1>
+                Time to Restart.
+                <motion.span
+                  className="block bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent pb-2"
+                  style={{
+                    fontFamily: "'Playfair Display', serif",
+                    fontWeight: 800,
+                    lineHeight: "1.25",
+                    paddingBottom: "8px",
+                  }}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
+                  }
+                  transition={{ duration: 1, delay: 0.5 }}
+                >
+                  with Clarity & Courage.
+                </motion.span>
+              </motion.h1>
+            </div>
             <motion.p
-              className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl"
+              className="text-base md:text-lg text-white/90 leading-relaxed max-w-3xl"
               style={{ fontFamily: "Poppins, sans-serif" }}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
