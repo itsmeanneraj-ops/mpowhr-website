@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Quote, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import anne1 from "@/assets/anne1.jpg";
+import anne1 from "@/assets/anne1.svg";
 
 const About = () => {
   const { ref, isInView } = useScrollAnimation();
@@ -14,7 +14,7 @@ const About = () => {
       ref={ref}
     >
       <div className="container-width">
-        <div className="grid lg:grid-cols-2 grid-spacing items-center">
+        <div className="grid lg:grid-cols-2 grid-spacing items-start">
           {/* Left Column - Content */}
           <div className="content-spacing">
             <div>
@@ -44,35 +44,72 @@ const About = () => {
                 </span>{" "}
                 Story
               </motion.h2>
-              <p
-                className="text-lg text-gray-600 leading-relaxed section-title-spacing"
-                style={{ fontFamily: "Poppins, sans-serif" }}
-              >
-                MpowHR was founded on the belief that life doesn't come with a
-                roadmap, and everyone deserves a safe space to hit the pause
-                button. It is the destination for those ready to pause, realign,
-                and rise.
-                <br />
-                <br />
-                Anne, the founder, is an internationally certified Life Coach
-                and Corporate Trainer. With over 10 years of hands-on experience
-                and 5+ certifications, she is MpowHR's dedicated guide,
-                specializing in navigating the messy, exhilarating, or downright
-                tough transitions life presents.
-                <br />
-                <br />
-                Anne's expertise lies in coaching individuals and teams through
-                everything from massive career shifts and relationship reboots
-                to finding clarity after major life changes. She provides the
-                framework, tools, and unwavering support necessary to help
-                clients cut through the noise and figure out what they truly
-                want.
-                <br />
-                <br />
-                The true measure of her work is watching clients restart with
-                clarity, courage, and choice, ensuring they rise again on their
-                own terms.
-              </p>
+              <div className="space-y-6">
+                <p
+                  className="text-lg text-gray-600 leading-relaxed"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  MpowHR was founded by Anne Anshumathi Raj with a vision that
+                  everyone deserves a safe space to pause, unlearn, learn,
+                  realign, and rise. She is an Internationally Certified Life
+                  Coach and Soft-skills Trainer with over 15 years of hands-on
+                  experience.
+                </p>
+
+                <div className="space-y-4">
+                  <p
+                    className="text-lg text-gray-600 leading-relaxed"
+                    style={{ fontFamily: "Poppins, sans-serif" }}
+                  >
+                    With her experience as:
+                  </p>
+
+                  <ul className="space-y-3 text-lg text-gray-600 leading-relaxed ml-4">
+                    <li
+                      className="flex items-start gap-3"
+                      style={{ fontFamily: "Poppins, sans-serif" }}
+                    >
+                      <span className="text-primary mt-1">●</span>
+                      <span>
+                        A Senior People Manager, she bridges the evident gap in
+                        Personal and Organisational Behavioural Skills.
+                      </span>
+                    </li>
+
+                    <li
+                      className="flex items-start gap-3"
+                      style={{ fontFamily: "Poppins, sans-serif" }}
+                    >
+                      <span className="text-primary mt-1">●</span>
+                      <span>
+                        An Entrepreneur & Leader, she champions the belief that
+                        empowered people build powerful businesses.
+                      </span>
+                    </li>
+
+                    <li
+                      className="flex items-start gap-3"
+                      style={{ fontFamily: "Poppins, sans-serif" }}
+                    >
+                      <span className="text-primary mt-1">●</span>
+                      <span>
+                        A mother of three, Anne is passionate about working with
+                        tender pre-teens and teenagers.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <p
+                  className="text-lg text-gray-600 leading-relaxed"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  Anne's expertise lies in facilitating individuals, leaders and
+                  teams by identifying the problem, providing the necessary
+                  skillset to rise and take decisive action within deadlines
+                  independently with clarity and confidence.
+                </p>
+              </div>
             </div>
 
             {/* Quote */}
@@ -99,7 +136,10 @@ const About = () => {
           </div>
 
           {/* Right Column - Image & Stats */}
-          <div className="relative">
+          <div
+            className="relative"
+            style={{ marginTop: "calc(2.5rem + 1.8rem + 1.5rem)" }}
+          >
             <div className="relative">
               {/* Main Image */}
               <div className="overflow-hidden shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)]">

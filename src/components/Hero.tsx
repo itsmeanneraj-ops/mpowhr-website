@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import mpowhrBanner from "@/assets/Mpowhr- Banner.svg";
+import mpowhrBanner from "@/assets/Mpowhr-Banner.svg";
 
 const Hero = () => {
   const { ref, isInView } = useScrollAnimation();
@@ -13,7 +13,7 @@ const Hero = () => {
       className="relative min-h-screen bg-cover bg-right bg-fixed bg-no-repeat"
       style={{
         backgroundImage: `url(${mpowhrBanner})`,
-        backgroundPosition: "right -12px",
+        backgroundPosition: "right top 20px",
       }}
     >
       {/* Dark Overlay with Subtle Green Tint for Better Text Readability */}
@@ -26,10 +26,10 @@ const Hero = () => {
           <div className="space-y-6">
             <div className="drop-shadow-5xl">
               <motion.h1
-                className="text-3xl md:text-4xl leading-tight bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent pb-2"
+                className="text-3xl md:text-[2.5rem] leading-tight bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent pb-2"
                 style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontWeight: 800,
+                  fontFamily: "'Poppins', sans-serif",
+                  fontWeight: 700,
                   lineHeight: "1.25",
                   paddingBottom: "8px",
                 }}
@@ -41,12 +41,12 @@ const Hero = () => {
               >
                 Time to Restart.
                 <motion.span
-                  className="block bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent pb-2"
+                  className="block text-3xl md:text-[2.5rem] bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent pb-2"
                   style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontWeight: 800,
+                    fontFamily: "'Poppins', sans-serif",
+                    fontWeight: 700,
                     lineHeight: "1.25",
-                    paddingBottom: "8px",
+                    paddingBottom: "3px",
                   }}
                   initial={{ opacity: 0, y: 30 }}
                   animate={
@@ -59,13 +59,14 @@ const Hero = () => {
               </motion.h1>
             </div>
             <motion.p
-              className="text-base md:text-lg text-white/90 leading-relaxed max-w-3xl"
+              className="text-base md:text-xl text-white/90 leading-relaxed max-w-3xl"
               style={{ fontFamily: "Poppins, sans-serif" }}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-              Get 10+ years of expert coaching and strategic insights to build
+              Get 15+ years of expert coaching and strategic insights to build
+              <br />
               resilience and lasting success.
             </motion.p>
           </div>

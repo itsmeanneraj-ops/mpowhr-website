@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Users, Target, Heart } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import coachingSessionImg from "@/assets/coaching-session.jpg";
-import hrMeetingImg from "@/assets/hr-meeting.jpg";
-import heroCoachImg from "@/assets/hero-coach.jpg";
+import coachingSessionImg from "@/assets/coaching-session.png";
+import hrMeetingImg from "@/assets/hr-meeting.png";
+import heroCoachImg from "@/assets/hero-coach.png";
 
 const Services = () => {
   const { ref, isInView } = useScrollAnimation();
@@ -38,14 +38,13 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: "Dedicated Growth Programes",
+      title: "Dedicated Inclusivity & Compliance Programs:",
       description:
         "Short-term, high-intensity formats designed to deliver rapid progress and immediate, actionable takeaways for specific individual or group goals.",
       highlights: [
-        "The Pause. Realign. Rise. Intensive",
-        "Workshops for Team Alignment",
-        "Personal Branding for Leaders",
-        "Group Coaching for Professionals",
+        "Prevention of Sexual Harrassment (POSH)",
+        "Protection of Children from Sexual Offences (POCSO)",
+        "Diversity, Equity, and Inclusion (DEI)",
       ],
       image: heroCoachImg,
     },
@@ -55,7 +54,7 @@ const Services = () => {
     <section id="services" className="section-padding bg-background" ref={ref}>
       <div className="container-width">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto section-header-spacing">
+        <div className="max-w-5xl mx-auto section-header-spacing">
           <motion.h2
             className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-none tracking-wider"
             style={{
@@ -68,7 +67,7 @@ const Services = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            What We{" "}
+            Your Catalyst for Change:{" "}
             <span
               className="text-gradient"
               style={{
@@ -76,11 +75,11 @@ const Services = () => {
                 fontWeight: "700",
               }}
             >
-              Provide
+              Our Signature Services
             </span>
           </motion.h2>
           <p
-            className="text-lg text-gray-600 leading-relaxed"
+            className="text-lg text-gray-600 leading-relaxed text-center"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Strategic coaching and development services designed to foster
@@ -136,6 +135,24 @@ const Services = () => {
                       </p>
                     ))}
                   </div>
+
+                  {/* Show button only for the last service */}
+                  {index === services.length - 1 && (
+                    <div className="mt-8">
+                      <Button
+                        onClick={() =>
+                          window.open(
+                            "https://drive.google.com/file/d/1lpPvI3eqIa6EVJzLvEg3X7hU3SW2f9lz/view?usp=drive_link",
+                            "_blank"
+                          )
+                        }
+                        className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 text-base font-medium shadow-md hover:shadow-lg transition-all duration-300"
+                        style={{ fontFamily: "Poppins, sans-serif" }}
+                      >
+                        Know More
+                      </Button>
+                    </div>
+                  )}
                 </div>
 
                 {/* Image Side */}

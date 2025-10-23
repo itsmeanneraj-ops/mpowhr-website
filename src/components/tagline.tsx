@@ -21,7 +21,8 @@ export default function Tagline() {
           }
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          It's not "okay" to be constantly tired, stressed or overworked.
+          It is the destination for those ready to realign, take action and
+          rise.
         </motion.span>
       </div>
     </motion.div>

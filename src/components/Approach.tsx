@@ -94,7 +94,7 @@ const Approach = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            My{" "}
+            Our{" "}
             <span
               className="text-gradient"
               style={{

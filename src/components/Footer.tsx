@@ -25,7 +25,11 @@ const Footer = () => {
               <p className="text-primary-foreground/80 leading-relaxed">
                 Empowering individuals and organizations to unlock their full
                 potential through expert life coaching and strategic HR
-                management.
+                management.” WITH “You Were Built for More. Let's Prove It. We
+                don't just coach—we install the mental operating system of a
+                high-performer. By dissolving limiting beliefs and structuring
+                crystal-clear individual & organizational goals, we ensure you
+                effortlessly operate at the level of success you deserve."
               </p>
             </div>
           </div>

@@ -5,12 +5,11 @@ export default function Imagine() {
   const { ref, isInView } = useScrollAnimation();
 
   const items = [
-    "Wake up energized after a sound night's sleep, ready for the day.",
-    "Rediscover the joy in exercise, hobbies, and 'me time'",
-    "Feel total confidence in your personal direction and life choices.",
-    "Easily set and hold clear boundaries without guilt or obligation.",
-    "Fully commit to a fresh start after a difficult transition, leaving the past behind.",
-    "Know what to prioritize every morning, eliminating the feeling of being overwhelmed.",
+    "Experience total confidence in your path and life decisions.",
+    "Gain success authentically, without the need to people-please.",
+    "Set and hold clear limits with ease, eliminating guilt and obligation.",
+    "Dissolve the weight of the past and commit fully to a breakthrough future.",
+    "Instantly know your most important tasks, ending the overwhelmed.",
     "Break destructive habits and replace them with purposeful action.",
     "Lead with resilience, treating every setback as a learning opportunity.",
     'Achieve success without compromise or the need to constantly "people please."',
@@ -19,6 +18,7 @@ export default function Imagine() {
 
   return (
     <motion.div
+      id="imagine-section"
       ref={ref}
       className="bg-primary text-primary-foreground w-full min-h-[85vh] flex flex-col items-center justify-center px-4 py-16"
       initial={{ opacity: 0 }}
@@ -26,12 +26,21 @@ export default function Imagine() {
       transition={{ duration: 0.5 }}
     >
       <motion.div
-        className="text-center mb-8 text-3xl md:text-4xl font-semibold"
+        className="text-center mb-4 text-3xl md:text-4xl font-semibold"
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Imagine if you could
+        Start Living the Upgraded You.
+      </motion.div>
+
+      <motion.div
+        className="text-center mb-8 text-xl font-medium"
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+        transition={{ duration: 0.6, delay: 0.25 }}
+      >
+        You will Anchor a new, powerful identity and begin to:
       </motion.div>
 
       <motion.div
