@@ -76,8 +76,8 @@ const Hero = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-              Get 15+ years of expert coaching and strategic insights to build
-              <br />
+              Get 15+ years of expert coaching and strategic insights to build{" "}
+              <br className="hidden md:block" />
               resilience and lasting success.
             </motion.p>
           </div>
