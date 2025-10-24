@@ -191,7 +191,7 @@ const Footer = () => {
         </div>
 
         {/* Credits */}
-        <div className="flex justify-end pt-4">
+        <div className="flex justify-center md:justify-end pt-4">
           <p className="text-primary-foreground/50 text-xs">
             Designed and Developed by{" "}
             <a
