@@ -39,8 +39,18 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-3xl font-bold mb-4">
-                Mpow<span className="text-gradient">HR</span>
+              <h3
+                className="text-3xl font-bold mb-4"
+                style={{
+                  fontFamily: "'Playfair Display', serif",
+                  background:
+                    "linear-gradient(135deg, #B8941F 0%, #8B7A1A 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                MpowHR
               </h3>
               <p className="text-primary-foreground/80 leading-relaxed">
                 You Were Built for More. Let's Prove It. We don't just coach—we
