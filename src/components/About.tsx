@@ -14,36 +14,36 @@ const About = () => {
       ref={ref}
     >
       <div className="container-width">
+        {/* Title Section - Always on top */}
+        <motion.h2
+          className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-none tracking-wider"
+          style={{
+            fontFamily: "Vinila, Inter, sans-serif",
+            fontStyle: "normal",
+            letterSpacing: "0.01em",
+            fontWeight: "700",
+          }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          The{" "}
+          <span
+            className="text-gradient"
+            style={{
+              fontFamily: "Vinila, Inter, sans-serif",
+              fontWeight: "700",
+            }}
+          >
+            MpowHR
+          </span>{" "}
+          Story
+        </motion.h2>
+
         <div className="grid lg:grid-cols-2 grid-spacing items-start">
           {/* Left Column - Content */}
-          <div className="content-spacing">
+          <div className="content-spacing order-2 lg:order-1">
             <div>
-              <motion.h2
-                className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-none tracking-wider"
-                style={{
-                  fontFamily: "Vinila, Inter, sans-serif",
-                  fontStyle: "normal",
-                  letterSpacing: "0.01em",
-                  fontWeight: "700",
-                }}
-                initial={{ opacity: 0, y: 50 }}
-                animate={
-                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
-                }
-                transition={{ duration: 0.8, delay: 0.2 }}
-              >
-                The{" "}
-                <span
-                  className="text-gradient"
-                  style={{
-                    fontFamily: "Vinila, Inter, sans-serif",
-                    fontWeight: "700",
-                  }}
-                >
-                  MpowHR
-                </span>{" "}
-                Story
-              </motion.h2>
               <div className="space-y-6">
                 <p
                   className="text-lg text-gray-600 leading-relaxed"
@@ -136,10 +136,7 @@ const About = () => {
           </div>
 
           {/* Right Column - Image & Stats */}
-          <div
-            className="relative"
-            style={{ marginTop: "calc(2.5rem + 1.8rem + 1.5rem)" }}
-          >
+          <div className="relative order-1 lg:order-2">
             <div className="relative">
               {/* Main Image */}
               <div className="overflow-hidden shadow-[0_8px_32px_hsl(75_35%_25%/_0.15)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_hsl(75_35%_25%/_0.12)]">

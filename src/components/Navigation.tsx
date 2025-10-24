@@ -118,16 +118,16 @@ const Navigation = () => {
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
-                href="#services"
-                className={`block px-3 py-2 ${textClasses} font-medium text-lg`}
-              >
-                What We Provide
-              </a>
-              <a
                 href="#about"
                 className={`block px-3 py-2 ${textClasses} font-medium text-lg`}
               >
                 About
+              </a>
+              <a
+                href="#services"
+                className={`block px-3 py-2 ${textClasses} font-medium text-lg`}
+              >
+                Services
               </a>
               <a
                 href="#approach"
@@ -144,7 +144,7 @@ const Navigation = () => {
               {/* Mobile Social Icons */}
               <div className="flex items-center justify-center space-x-6 pt-4 pb-2">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/anne-anshumathi-raj-b9b90848/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
@@ -152,7 +152,7 @@ const Navigation = () => {
                   <Linkedin className="w-8 h-8" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/mpowhr_restart"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"

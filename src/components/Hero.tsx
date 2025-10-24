@@ -3,24 +3,35 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import mpowhrBanner from "@/assets/Mpowhr-Banner.svg";
+import mobileImage from "@/assets/mobile.jpeg";
 
 const Hero = () => {
   const { ref, isInView } = useScrollAnimation();
 
   return (
-    <section
-      ref={ref}
-      className="relative min-h-screen bg-cover bg-right bg-fixed bg-no-repeat w-full overflow-hidden"
-      style={{
-        backgroundImage: `url(${mpowhrBanner})`,
-        backgroundPosition: "right top 20px",
-      }}
-    >
+    <section ref={ref} className="relative min-h-screen w-full overflow-hidden">
+      {/* Mobile Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-fixed bg-no-repeat md:hidden"
+        style={{
+          backgroundImage: `url(${mobileImage})`,
+          backgroundPosition: "center 20px",
+        }}
+      />
+
+      {/* Desktop Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-right bg-fixed bg-no-repeat hidden md:block"
+        style={{
+          backgroundImage: `url(${mpowhrBanner})`,
+          backgroundPosition: "right top 20px",
+        }}
+      />
       {/* Dark Overlay with Subtle Green Tint for Better Text Readability */}
-      <div className="absolute inset-0 bg-gradient-to-br from-green-900/20 via-black/40 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-br from-green-900/20 via-black/40 to-black/50 z-10" />
 
       {/* Content Overlay */}
-      <div className="relative z-10 min-h-screen flex items-center px-6 md:px-8 lg:px-12">
+      <div className="relative z-20 min-h-screen flex items-center px-6 md:px-8 lg:px-12">
         <div className="text-left max-w-4xl 2xl:pl-20 4xl:pl-48 5xl:pl-72">
           {/* Main Heading */}
           <div className="space-y-6">

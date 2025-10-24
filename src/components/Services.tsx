@@ -7,6 +7,207 @@ import coachingSessionImg from "@/assets/coaching-session.png";
 import hrMeetingImg from "@/assets/hr-meeting.png";
 import heroCoachImg from "@/assets/hero-coach.png";
 
+// Individual service component for proper hook usage
+const ServiceCard = ({
+  service,
+  index,
+  isEven,
+  isLastService,
+  buttonRef,
+  isButtonInView,
+}) => {
+  const contentRef = useRef(null);
+  const imageRef = useRef(null);
+  const isContentInView = useInView(contentRef, {
+    once: true,
+    margin: "-50px",
+  });
+  const isImageInView = useInView(imageRef, { once: true, margin: "-50px" });
+
+  return (
+    <div
+      className={`flex flex-col lg:flex-row items-center gap-8 lg:gap-12 ${
+        isEven ? "" : "lg:flex-row-reverse"
+      }`}
+    >
+      {/* Content Side */}
+      <motion.div
+        ref={contentRef}
+        className="flex-1 max-w-lg order-2 lg:order-none"
+        initial={{ opacity: 0, x: isEven ? -50 : 50 }}
+        animate={
+          isContentInView
+            ? { opacity: 1, x: 0 }
+            : { opacity: 0, x: isEven ? -50 : 50 }
+        }
+        transition={{ duration: 0.8, delay: index * 0.2 }}
+      >
+        {service.popular && (
+          <motion.div
+            className="inline-block bg-secondary text-secondary-foreground px-4 py-1 text-sm font-medium rounded-full mb-4"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={
+              isContentInView
+                ? { opacity: 1, scale: 1 }
+                : { opacity: 0, scale: 0.8 }
+            }
+            transition={{ duration: 0.6, delay: index * 0.2 + 0.2 }}
+          >
+            Most Popular
+          </motion.div>
+        )}
+
+        <motion.h3
+          className="text-3xl lg:text-4xl font-bold mb-4 text-primary"
+          style={{
+            fontFamily: "Vinila, Inter, sans-serif",
+          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={
+            isContentInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+          }
+          transition={{ duration: 0.6, delay: index * 0.2 + 0.3 }}
+        >
+          {service.title}
+        </motion.h3>
+
+        <motion.p
+          className="text-gray-600 text-lg leading-relaxed mb-8"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={
+            isContentInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+          }
+          transition={{ duration: 0.6, delay: index * 0.2 + 0.4 }}
+        >
+          {service.description}
+        </motion.p>
+
+        <div className="space-y-4">
+          {service.highlights.map((highlight, idx) => (
+            <motion.div
+              key={idx}
+              className="flex items-start gap-3 text-gray-700 leading-relaxed"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+              initial={{ opacity: 0, x: -20 }}
+              animate={
+                isContentInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
+              }
+              transition={{
+                duration: 0.5,
+                delay: index * 0.2 + 0.5 + idx * 0.1,
+              }}
+            >
+              <span className="text-primary font-bold text-xl leading-none mt-1">
+                •
+              </span>
+              <span>{highlight}</span>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Show button only for the last service */}
+        {isLastService && (
+          <motion.div
+            className="mt-8"
+            ref={buttonRef}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={
+              isContentInView
+                ? { opacity: 1, scale: 1 }
+                : { opacity: 0, scale: 0.9 }
+            }
+            transition={{ duration: 0.6, delay: index * 0.2 + 0.8 }}
+          >
+            <motion.div
+              animate={
+                isButtonInView
+                  ? {
+                      x: [0, -2, 2, -2, 2, 0],
+                      transition: {
+                        duration: 0.5,
+                        delay: 0.3,
+                        ease: "easeInOut",
+                      },
+                    }
+                  : {}
+              }
+            >
+              <Button
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1lpPvI3eqIa6EVJzLvEg3X7hU3SW2f9lz/view?usp=drive_link",
+                    "_blank"
+                  )
+                }
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 text-base font-medium shadow-md hover:shadow-lg transition-all duration-300"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                Know More
+              </Button>
+            </motion.div>
+          </motion.div>
+        )}
+      </motion.div>
+
+      {/* Image Side */}
+      <motion.div
+        ref={imageRef}
+        className="flex-1 flex justify-center lg:justify-center max-w-sm order-1 lg:order-none"
+        initial={{ opacity: 0, x: isEven ? 50 : -50 }}
+        animate={
+          isImageInView
+            ? { opacity: 1, x: 0 }
+            : { opacity: 0, x: isEven ? 50 : -50 }
+        }
+        transition={{ duration: 0.8, delay: index * 0.2 + 0.1 }}
+      >
+        <div className="relative">
+          {/* Circular Image Container */}
+          <motion.div
+            className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-gray-100 border-4 border-white shadow-2xl"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={
+              isImageInView
+                ? { scale: 1, opacity: 1 }
+                : { scale: 0.8, opacity: 0 }
+            }
+            transition={{ duration: 0.8, delay: index * 0.2 + 0.3 }}
+          >
+            <img
+              src={service.image}
+              alt={service.title}
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+
+          {/* Decorative elements */}
+          <motion.div
+            className="absolute -top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full animate-pulse"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={
+              isImageInView
+                ? { opacity: 1, scale: 1 }
+                : { opacity: 0, scale: 0 }
+            }
+            transition={{ duration: 0.6, delay: index * 0.2 + 0.6 }}
+          ></motion.div>
+          <motion.div
+            className="absolute -bottom-4 -left-4 w-6 h-6 bg-accent/30 rounded-full animate-pulse delay-300"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={
+              isImageInView
+                ? { opacity: 1, scale: 1 }
+                : { opacity: 0, scale: 0 }
+            }
+            transition={{ duration: 0.6, delay: index * 0.2 + 0.8 }}
+          ></motion.div>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
 const Services = () => {
   const { ref, isInView } = useScrollAnimation();
   const buttonRef = useRef(null);
@@ -100,105 +301,18 @@ const Services = () => {
         <div className="space-y-16 lg:space-y-24 max-w-5xl mx-auto px-4 lg:px-8">
           {services.map((service, index) => {
             const isEven = index % 2 === 0;
+            const isLastService = index === services.length - 1;
 
             return (
-              <div
+              <ServiceCard
                 key={index}
-                className={`flex flex-col lg:flex-row items-center gap-8 lg:gap-12 ${
-                  isEven ? "" : "lg:flex-row-reverse"
-                }`}
-              >
-                {/* Content Side */}
-                <div className="flex-1 max-w-lg order-2 lg:order-none">
-                  {service.popular && (
-                    <div className="inline-block bg-secondary text-secondary-foreground px-4 py-1 text-sm font-medium rounded-full mb-4">
-                      Most Popular
-                    </div>
-                  )}
-
-                  <h3
-                    className="text-3xl lg:text-4xl font-bold mb-4 text-primary"
-                    style={{
-                      fontFamily: "Vinila, Inter, sans-serif",
-                    }}
-                  >
-                    {service.title}
-                  </h3>
-
-                  <p
-                    className="text-gray-600 text-lg leading-relaxed mb-8"
-                    style={{ fontFamily: "Poppins, sans-serif" }}
-                  >
-                    {service.description}
-                  </p>
-
-                  <div className="space-y-4">
-                    {service.highlights.map((highlight, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-start gap-3 text-gray-700 leading-relaxed"
-                        style={{ fontFamily: "Poppins, sans-serif" }}
-                      >
-                        <span className="text-primary font-bold text-xl leading-none mt-1">
-                          •
-                        </span>
-                        <span>{highlight}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Show button only for the last service */}
-                  {index === services.length - 1 && (
-                    <motion.div
-                      className="mt-8"
-                      ref={buttonRef}
-                      animate={
-                        isButtonInView
-                          ? {
-                              x: [0, -2, 2, -2, 2, 0],
-                              transition: {
-                                duration: 0.5,
-                                delay: 0.3,
-                                ease: "easeInOut",
-                              },
-                            }
-                          : {}
-                      }
-                    >
-                      <Button
-                        onClick={() =>
-                          window.open(
-                            "https://drive.google.com/file/d/1lpPvI3eqIa6EVJzLvEg3X7hU3SW2f9lz/view?usp=drive_link",
-                            "_blank"
-                          )
-                        }
-                        className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 text-base font-medium shadow-md hover:shadow-lg transition-all duration-300"
-                        style={{ fontFamily: "Poppins, sans-serif" }}
-                      >
-                        Know More
-                      </Button>
-                    </motion.div>
-                  )}
-                </div>
-
-                {/* Image Side */}
-                <div className="flex-1 flex justify-center lg:justify-center max-w-sm order-1 lg:order-none">
-                  <div className="relative">
-                    {/* Circular Image Container */}
-                    <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-gray-100 border-4 border-white shadow-2xl">
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-
-                    {/* Decorative elements */}
-                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary/20 rounded-full animate-pulse"></div>
-                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-accent/30 rounded-full animate-pulse delay-300"></div>
-                  </div>
-                </div>
-              </div>
+                service={service}
+                index={index}
+                isEven={isEven}
+                isLastService={isLastService}
+                buttonRef={buttonRef}
+                isButtonInView={isButtonInView}
+              />
             );
           })}
         </div>
