@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="relative bg-primary text-primary-foreground"
+      className="relative bg-primary text-primary-foreground w-full"
       style={{
         backgroundImage: `url(${footerBanner})`,
         backgroundSize: "cover",

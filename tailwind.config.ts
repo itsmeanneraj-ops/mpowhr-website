@@ -3,21 +3,32 @@ import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1.5rem",
+        lg: "2rem",
+        xl: "3rem",
+        "2xl": "4rem",
+      },
       screens: {
         "2xl": "1400px",
       },
     },
     extend: {
       fontFamily: {
-        'heading': ['Playfair Display', 'serif'],
-        'subheading': ['Poppins', 'sans-serif'],
-        'body': ['Poppins', 'sans-serif'],
+        heading: ["Playfair Display", "serif"],
+        subheading: ["Poppins", "sans-serif"],
+        body: ["Poppins", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

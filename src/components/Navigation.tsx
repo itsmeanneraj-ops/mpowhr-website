@@ -35,10 +35,14 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`top-0 left-0 right-0 z-50 backdrop-blur-md border-b sticky transition-all duration-300 ${navClasses}`}
+      className={`nav-always-visible nav-backdrop border-b transition-all duration-300 w-full ${navClasses}`}
+      style={{
+        backdropFilter: "blur(20px)",
+        WebkitBackdropFilter: "blur(20px)",
+      }}
     >
-      <div className="w-full px-4 md:px-6">
-        <div className="flex items-center justify-between h-14 md:h-16">
+      <div className="w-full px-4 md:px-6 max-w-none">
+        <div className="flex items-center justify-between h-14 md:h-16 min-h-[3.5rem] md:min-h-[4rem]">
           {/* Logo - Anchored to left edge */}
           <div className="flex items-center">
             <Logo />
@@ -109,7 +113,9 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className={`md:hidden border-t ${mobileMenuClasses}`}>
+          <div
+            className={`md:hidden border-t ${mobileMenuClasses} absolute top-full left-0 right-0 w-full max-h-[calc(100vh-3.5rem)] overflow-y-auto`}
+          >
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
                 href="#services"

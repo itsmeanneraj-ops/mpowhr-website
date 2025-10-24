@@ -55,7 +55,11 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-background" ref={ref}>
+    <section
+      id="services"
+      className="section-padding bg-background w-full"
+      ref={ref}
+    >
       <div className="container-width">
         {/* Section Header */}
         <div className="max-w-5xl mx-auto section-header-spacing">

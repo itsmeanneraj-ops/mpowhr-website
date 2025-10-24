@@ -10,16 +10,18 @@ import Imagine from "@/components/imagine";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full overflow-x-hidden">
       <Navigation />
-      <Hero />
-      <Impact />
-      <About />
-      <Tagline />
-      <Services />
-      <Imagine />
-      <Approach />
-      <Footer />
+      <div className="pt-14 md:pt-16">
+        <Hero />
+        <Impact />
+        <About />
+        <Tagline />
+        <Services />
+        <Imagine />
+        <Approach />
+        <Footer />
+      </div>
     </div>
   );
 };

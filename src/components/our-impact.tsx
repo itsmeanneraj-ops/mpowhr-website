@@ -44,7 +44,7 @@ const AnimatedCounter = ({ target }: CounterProps) => {
 
 const Impact = () => {
   return (
-    <section className="section-padding overflow-hidden">
+    <section className="section-padding overflow-hidden w-full">
       <motion.div
         className="text-center"
         initial={{ opacity: 0, y: 50 }}

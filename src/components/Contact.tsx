@@ -10,7 +10,11 @@ const Contact = () => {
   const { ref, isInView } = useScrollAnimation();
 
   return (
-    <section id="contact" className="section-padding bg-background" ref={ref}>
+    <section
+      id="contact"
+      className="section-padding bg-background w-full"
+      ref={ref}
+    >
       <div className="container-width">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto section-header-spacing">

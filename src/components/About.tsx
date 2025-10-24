@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="section-padding bg-gradient-to-b from-[hsl(40_25%_96%)] to-[hsl(45_35%_88%)]"
+      className="section-padding bg-gradient-to-b from-[hsl(40_25%_96%)] to-[hsl(45_35%_88%)] w-full"
       ref={ref}
     >
       <div className="container-width">

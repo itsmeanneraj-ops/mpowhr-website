@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen bg-cover bg-right bg-fixed bg-no-repeat"
+      className="relative min-h-screen bg-cover bg-right bg-fixed bg-no-repeat w-full overflow-hidden"
       style={{
         backgroundImage: `url(${mpowhrBanner})`,
         backgroundPosition: "right top 20px",

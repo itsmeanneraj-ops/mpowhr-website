@@ -9,7 +9,7 @@ const Community = () => {
   return (
     <section
       id="community"
-      className="section-padding bg-gradient-to-br from-[hsl(75_20%_85%)] to-[hsl(45_35%_90%)]"
+      className="section-padding bg-gradient-to-br from-[hsl(75_20%_85%)] to-[hsl(45_35%_90%)] w-full"
       ref={ref}
     >
       <div className="container-width">
