@@ -71,10 +71,33 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-gradient" />
                 <span className="text-primary-foreground/80 text-sm">
-                  India
+                  East Coast Road, Injambakkan, Chennai - 600115
                 </span>
               </li>
             </ul>
+
+            {/* Social Icons - Mobile Only */}
+            <div className="lg:hidden mt-6">
+              <h5 className="text-lg font-semibold mb-4">Follow Us</h5>
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://www.linkedin.com/in/anne-anshumathi-raj-b9b90848/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://www.instagram.com/mpowhr_restart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20"
+                >
+                  <Instagram className="w-6 h-6" />
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Certificate Badges */}
@@ -155,6 +178,21 @@ const Footer = () => {
               Cookie Policy
             </a>
           </div>
+        </div>
+
+        {/* Credits */}
+        <div className="flex justify-end pt-4">
+          <p className="text-primary-foreground/50 text-xs">
+            Designed and Developed by{" "}
+            <a
+              href="https://theeagleseye.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/70 hover:text-white transition-colors underline"
+            >
+              The Eagle Eye
+            </a>
+          </p>
         </div>
       </div>
     </footer>

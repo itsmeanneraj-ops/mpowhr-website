@@ -141,25 +141,6 @@ const Navigation = () => {
               >
                 Contact
               </a>
-              {/* Mobile Social Icons */}
-              <div className="flex items-center justify-center space-x-6 pt-4 pb-2">
-                <a
-                  href="https://www.linkedin.com/in/anne-anshumathi-raj-b9b90848/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
-                >
-                  <Linkedin className="w-8 h-8" />
-                </a>
-                <a
-                  href="https://www.instagram.com/mpowhr_restart"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#D4AF37] hover:text-[#B8941F] transition-colors p-2"
-                >
-                  <Instagram className="w-8 h-8" />
-                </a>
-              </div>
             </div>
           </div>
         )}
