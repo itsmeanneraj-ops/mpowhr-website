@@ -15,7 +15,7 @@ const Community = () => {
       <div className="container-width">
         <div className="text-center section-header-spacing animate-[fadeInUp_0.6s_ease-out_forwards]">
           <motion.h2
-            className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-none tracking-wider"
+            className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-tight tracking-wider"
             style={{
               fontFamily: "Vinila, Inter, sans-serif",
               fontStyle: "normal",

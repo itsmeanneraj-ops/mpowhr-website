@@ -188,7 +188,7 @@ const Approach = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto section-header-spacing">
           <motion.h2
-            className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-none tracking-wider"
+            className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-tight tracking-wider"
             style={{
               fontFamily: "Vinila, Inter, sans-serif",
               fontStyle: "normal",

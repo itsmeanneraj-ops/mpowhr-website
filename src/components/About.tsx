@@ -16,7 +16,7 @@ const About = () => {
       <div className="container-width">
         {/* Title Section - Always on top */}
         <motion.h2
-          className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-none tracking-wider"
+          className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-tight tracking-wider"
           style={{
             fontFamily: "Vinila, Inter, sans-serif",
             fontStyle: "normal",
@@ -31,8 +31,8 @@ const About = () => {
           <span
             className="text-gradient"
             style={{
-              fontFamily: "Vinila, Inter, sans-serif",
-              fontWeight: "700",
+              fontFamily: "'Playfair Display', serif",
+              fontWeight: "800",
             }}
           >
             MpowHR

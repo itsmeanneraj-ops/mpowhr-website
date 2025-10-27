@@ -32,7 +32,7 @@ const AnimatedCounter = ({ target }: CounterProps) => {
   return (
     <motion.span
       ref={ref}
-      className="text-4xl font-black text-black counter tracking-tight leading-none"
+      className="text-4xl font-black text-black counter tracking-tight leading-tight"
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.5 }}
@@ -54,7 +54,7 @@ const Impact = () => {
       >
         {" "}
         <AnimatedTitle2
-          className="text-2xl sm:text-[2.5rem] font-normal section-header-spacing text-center leading-none tracking-wider"
+          className="text-2xl sm:text-[2.5rem] font-normal section-header-spacing text-center leading-tight tracking-wider"
           style={{
             fontFamily: "Vinila, Inter, sans-serif",
             fontStyle: "normal",

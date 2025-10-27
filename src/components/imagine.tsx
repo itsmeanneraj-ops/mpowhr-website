@@ -9,11 +9,12 @@ export default function Imagine() {
     "Gain success authentically, without the need to people-please.",
     "Set and hold clear limits with ease, eliminating guilt and obligation.",
     "Dissolve the weight of the past and commit fully to a breakthrough future.",
-    "Instantly know your most important tasks, ending the overwhelmed.",
-    "Break destructive habits and replace them with purposeful action.",
-    "Lead with resilience, treating every setback as a learning opportunity.",
-    'Achieve success without compromise or the need to constantly "people please."',
-    "Feel confident in your professional trajectory and future growth.",
+    "Instantly know your most important tasks, ending the overwhelm cycle.",
+    "Break destructive patterns and lock in purposeful, successful actions.",
+    "Wake up energized and focused after deep, restorative sleep.",
+    "Effortlessly rediscover passion in movement, hobbies, and personal time.",
+    "Feel unshakeable confidence in your professional growth and future.",
+    "Reframe every setback as a powerful learning opportunity.",
   ];
 
   return (

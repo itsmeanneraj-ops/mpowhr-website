@@ -18,7 +18,7 @@ export default function Logo() {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             backgroundClip: "text",
-            lineHeight: "1",
+            lineHeight: "1.2",
           }}
         >
           MpowHR

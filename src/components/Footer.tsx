@@ -53,11 +53,11 @@ const Footer = () => {
                 MpowHR
               </h3>
               <p className="text-primary-foreground/80 leading-relaxed">
-                You Were Built for More. Let's Prove It. We don't just coach—we
-                install the mental operating system of a high-performer. By
-                dissolving limiting beliefs and structuring crystal-clear
-                individual & organizational goals, we ensure you effortlessly
-                operate at the level of success you deserve.
+                You were built for more power. Let's prove it. We don't just
+                coach—we install the mental operating system of a
+                high-performer. By dissolving limiting beliefs and structuring
+                crystal-clear individual and organizational goals, we ensure you
+                effortlessly operate at the level of success you deserve.
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-gradient" />
                 <span className="text-primary-foreground/80 text-sm">
-                  East Coast Road, Injambakkan, Chennai - 600115
+                  East Coast Road, Injambakkam, Chennai - 600115
                 </span>
               </li>
             </ul>

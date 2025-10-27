@@ -98,7 +98,7 @@ const ServiceCard = ({
                 delay: index * 0.2 + 0.5 + idx * 0.1,
               }}
             >
-              <span className="text-primary font-bold text-xl leading-none mt-1">
+              <span className="text-primary font-bold text-xl leading-normal mt-1">
                 •
               </span>
               <span>{highlight}</span>
@@ -265,7 +265,7 @@ const Services = () => {
         {/* Section Header */}
         <div className="max-w-5xl mx-auto section-header-spacing">
           <motion.h2
-            className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-none tracking-wider"
+            className="text-2xl sm:text-[2.5rem] font-normal mb-12 text-center leading-tight tracking-wider"
             style={{
               fontFamily: "Vinila, Inter, sans-serif",
               fontStyle: "normal",
