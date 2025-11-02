@@ -29,10 +29,15 @@ const About = () => {
         >
           The{" "}
           <span
-            className="text-gradient"
             style={{
               fontFamily: "'Playfair Display', serif",
               fontWeight: "800",
+              background:
+                "linear-gradient(135deg, #8B6914 0%, #D4AF37 25%, #FFD700 50%, #D4AF37 75%, #8B6914 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              display: "inline",
             }}
           >
             MpowHR
@@ -128,10 +133,12 @@ const About = () => {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="default" size="lg">
-                <Calendar className="w-4 h-4" />
-                Book a Free Consultation
-              </Button>
+              <a href="#contact">
+                <Button variant="default" size="lg">
+                  <Calendar className="w-4 h-4" />
+                  Book a Free Consultation
+                </Button>
+              </a>
             </div>
           </div>
 

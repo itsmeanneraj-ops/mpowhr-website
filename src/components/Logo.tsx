@@ -14,14 +14,20 @@ export default function Logo() {
             fontFamily: "'Playfair Display', serif",
             fontWeight: 800,
             fontSize: "1.5rem",
-            background: "linear-gradient(135deg, #B8941F 0%, #8B7A1A 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
             lineHeight: "1.2",
           }}
         >
-          MpowHR
+          <span
+            style={{
+              background:
+                "linear-gradient(135deg, #8B6914 0%, #D4AF37 25%, #FFD700 50%, #D4AF37 75%, #8B6914 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            MpowHR
+          </span>
         </div>
 
         {/* Tagline */}

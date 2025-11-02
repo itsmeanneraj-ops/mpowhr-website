@@ -22,8 +22,7 @@ export default function Tagline() {
           }
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          It is the destination for those ready to realign, take action and
-          rise.
+          The destination for those ready to realign, take action and rise.
         </motion.span>
       </div>
     </motion.div>

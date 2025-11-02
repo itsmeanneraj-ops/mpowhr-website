@@ -38,14 +38,17 @@ export default function Imagine() {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
           Start Living the{" "}
           <span
             style={{
-              background: "linear-gradient(135deg, #B8941F 0%, #8B7A1A 100%)",
+              background:
+                "linear-gradient(135deg, #8B6914 0%, #D4AF37 25%, #FFD700 50%, #D4AF37 75%, #8B6914 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
+              display: "inline",
+              fontWeight: "inherit",
             }}
           >
             Upgraded You
@@ -284,17 +287,21 @@ export default function Imagine() {
       >
         <h3
           className="text-2xl md:text-3xl lg:text-4xl font-bold"
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontWeight: 800,
-            background: "linear-gradient(135deg, #B8941F 0%, #8B7A1A 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-            lineHeight: "1.2",
-          }}
+          style={{ fontFamily: "'Playfair Display', serif" }}
         >
-          This can be your life.
+          <span
+            style={{
+              background:
+                "linear-gradient(135deg, #8B6914 0%, #D4AF37 25%, #FFD700 50%, #D4AF37 75%, #8B6914 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              display: "inline",
+              fontWeight: "inherit",
+            }}
+          >
+            This can be your life.
+          </span>
         </h3>
       </motion.div>
     </motion.div>

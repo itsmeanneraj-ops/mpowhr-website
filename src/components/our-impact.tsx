@@ -62,16 +62,7 @@ const Impact = () => {
             fontWeight: "700",
           }}
         >
-          Us in{" "}
-          <span
-            className="text-gradient"
-            style={{
-              fontFamily: "Vinila, Inter, sans-serif",
-              fontWeight: "700",
-            }}
-          >
-            Numbers
-          </span>
+          Our Journey in Numbers
         </AnimatedTitle2>
         <motion.div
           className="flex flex-wrap justify-center gap-8 sm:gap-16 text-xl font-semibold"

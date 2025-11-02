@@ -199,16 +199,7 @@ const Approach = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Our{" "}
-            <span
-              className="text-gradient"
-              style={{
-                fontFamily: "Vinila, Inter, sans-serif",
-                fontWeight: "700",
-              }}
-            >
-              Approach
-            </span>
+            Our Approach
           </motion.h2>
           <motion.p
             className="text-lg text-gray-600 leading-relaxed"

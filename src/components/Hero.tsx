@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="space-y-6">
             <div className="drop-shadow-5xl">
               <motion.h1
-                className="text-3xl md:text-[2.5rem] leading-tight bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent pb-2"
+                className="text-3xl md:text-[2.5rem] leading-tight pb-2"
                 style={{
                   fontFamily: "'Poppins', sans-serif",
                   fontWeight: 700,
@@ -50,14 +50,29 @@ const Hero = () => {
                 }
                 transition={{ duration: 1, delay: 0.2 }}
               >
-                Time to Restart,
+                <span
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #8B6914 0%, #D4AF37 25%, #FFD700 50%, #D4AF37 75%, #8B6914 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
+                  Time to Restart,
+                </span>
                 <motion.span
-                  className="block text-3xl md:text-[2.5rem] bg-gradient-to-tr from-[#D4AF37] via-[#B8941F] to-[#8B7A1A] bg-clip-text text-transparent pb-2"
+                  className="block text-3xl md:text-[2.5rem] pb-2"
                   style={{
                     fontFamily: "'Poppins', sans-serif",
                     fontWeight: 700,
                     lineHeight: "1.25",
                     paddingBottom: "3px",
+                    background:
+                      "linear-gradient(135deg, #8B6914 0%, #D4AF37 25%, #FFD700 50%, #D4AF37 75%, #8B6914 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
                   }}
                   initial={{ opacity: 0, y: 30 }}
                   animate={

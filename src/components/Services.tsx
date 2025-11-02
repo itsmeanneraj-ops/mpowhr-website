@@ -276,16 +276,7 @@ const Services = () => {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Your Catalyst for Change:{" "}
-            <span
-              className="text-gradient"
-              style={{
-                fontFamily: "Vinila, Inter, sans-serif",
-                fontWeight: "700",
-              }}
-            >
-              Our Signature Services
-            </span>
+            Your Catalyst for Change: Our Signature Services
           </motion.h2>
           <p
             className="text-lg text-gray-600 leading-relaxed text-center"
