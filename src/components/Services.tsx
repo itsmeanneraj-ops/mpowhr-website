@@ -87,7 +87,7 @@ const ServiceCard = ({
           {service.highlights.map((highlight, idx) => (
             <motion.div
               key={idx}
-              className="flex items-start gap-3 text-gray-700 leading-relaxed"
+              className="flex items-center gap-3 text-gray-700 leading-relaxed"
               style={{ fontFamily: "Poppins, sans-serif" }}
               initial={{ opacity: 0, x: -20 }}
               animate={
@@ -98,10 +98,10 @@ const ServiceCard = ({
                 delay: index * 0.2 + 0.5 + idx * 0.1,
               }}
             >
-              <span className="text-primary font-bold text-xl leading-normal mt-1">
+              <span className="text-primary font-bold text-xl flex-shrink-0 leading-none">
                 •
               </span>
-              <span>{highlight}</span>
+              <span className="leading-relaxed">{highlight}</span>
             </motion.div>
           ))}
         </div>

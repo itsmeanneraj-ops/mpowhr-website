@@ -244,7 +244,7 @@ export default function Imagine() {
                 }}
               >
                 <motion.span
-                  className="text-[#D4AF37] font-bold text-lg"
+                  className="text-[#D4AF37] font-bold text-lg flex-shrink-0"
                   initial={{ opacity: 0, scale: 0 }}
                   animate={
                     isInView

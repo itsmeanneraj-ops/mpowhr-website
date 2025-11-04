@@ -74,7 +74,7 @@ const About = () => {
                       className="flex items-start gap-3"
                       style={{ fontFamily: "Poppins, sans-serif" }}
                     >
-                      <span className="text-primary mt-1">●</span>
+                      <span className="text-primary flex-shrink-0">●</span>
                       <span>
                         A Senior People Manager, she bridges the evident gap in
                         Personal and Organisational Behavioural Skills.
@@ -85,7 +85,7 @@ const About = () => {
                       className="flex items-start gap-3"
                       style={{ fontFamily: "Poppins, sans-serif" }}
                     >
-                      <span className="text-primary mt-1">●</span>
+                      <span className="text-primary flex-shrink-0">●</span>
                       <span>
                         An Entrepreneur & Leader, she champions the belief that
                         empowered people build powerful businesses.
@@ -96,7 +96,7 @@ const About = () => {
                       className="flex items-start gap-3"
                       style={{ fontFamily: "Poppins, sans-serif" }}
                     >
-                      <span className="text-primary mt-1">●</span>
+                      <span className="text-primary flex-shrink-0">●</span>
                       <span>
                         A mother of three, Anne is passionate about working with
                         tender pre-teens and teenagers.
